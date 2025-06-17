@@ -14,7 +14,6 @@ const topicData = {
     image: "photo-1466721591366-2d5fba72006d",
     difficulty: "Beginner",
     duration: "4 hours",
-    lessons: 12,
     progress: 30,
     overview: "Cell biology is the study of cell structure and function, and it revolves around the concept that the cell is the fundamental unit of life. Focusing on the cell permits a detailed understanding of the tissues and organisms that cells compose.",
     topics: [
@@ -155,7 +154,7 @@ const TopicDetail = () => {
                     <div className="text-xs text-gray-500">Completed</div>
                   </div>
                   <div>
-                    <div className="text-lg font-semibold text-bio-forest">9</div>
+                    <div className="text-lg font-semibold text-bio-forest">3</div>
                     <div className="text-xs text-gray-500">Remaining</div>
                   </div>
                 </div>
@@ -172,7 +171,7 @@ const TopicDetail = () => {
                   <div className="flex items-center space-x-3">
                     <BookOpen className="w-5 h-5 text-bio-green" />
                     <div>
-                      <div className="font-medium">{topic.lessons} Lessons</div>
+                      <div className="font-medium">{topic.lessons.length} Lessons</div>
                       <div className="text-sm text-gray-500">Interactive content</div>
                     </div>
                   </div>
