@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, CheckCircle, XCircle, RotateCcw } from "lucide-react";
@@ -48,6 +47,211 @@ const quizData = {
         options: ["Energy production", "Protein modification and packaging", "DNA replication", "Waste removal"],
         correct: 1,
         explanation: "The Golgi apparatus modifies, packages, and ships proteins and lipids received from the endoplasmic reticulum."
+      }
+    ]
+  },
+  "botany": {
+    title: "Botany Quiz",
+    description: "Test your knowledge of plant biology",
+    questions: [
+      {
+        id: 1,
+        question: "What process do plants use to make their own food?",
+        options: ["Respiration", "Photosynthesis", "Transpiration", "Germination"],
+        correct: 1,
+        explanation: "Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen."
+      },
+      {
+        id: 2,
+        question: "Which part of the plant is responsible for absorbing water and nutrients?",
+        options: ["Leaves", "Stem", "Roots", "Flowers"],
+        correct: 2,
+        explanation: "Roots absorb water and minerals from the soil and anchor the plant in place."
+      },
+      {
+        id: 3,
+        question: "What pigment gives plants their green color?",
+        options: ["Carotene", "Chlorophyll", "Anthocyanin", "Xanthophyll"],
+        correct: 1,
+        explanation: "Chlorophyll is the green pigment that captures light energy for photosynthesis."
+      },
+      {
+        id: 4,
+        question: "What is the male reproductive part of a flower called?",
+        options: ["Pistil", "Stamen", "Sepal", "Petal"],
+        correct: 1,
+        explanation: "The stamen is the male reproductive organ of a flower, consisting of the anther and filament."
+      },
+      {
+        id: 5,
+        question: "Which tissue transports water and minerals in plants?",
+        options: ["Phloem", "Xylem", "Cortex", "Epidermis"],
+        correct: 1,
+        explanation: "Xylem is the vascular tissue that transports water and dissolved minerals from roots to other parts of the plant."
+      }
+    ]
+  },
+  "anatomy": {
+    title: "Human Anatomy Quiz",
+    description: "Test your knowledge of human body systems",
+    questions: [
+      {
+        id: 1,
+        question: "How many bones are in the adult human body?",
+        options: ["196", "206", "216", "226"],
+        correct: 1,
+        explanation: "The adult human skeleton has 206 bones, which provide structure and protect organs."
+      },
+      {
+        id: 2,
+        question: "What is the largest organ in the human body?",
+        options: ["Liver", "Brain", "Skin", "Lungs"],
+        correct: 2,
+        explanation: "The skin is the largest organ, covering the entire body and protecting internal structures."
+      },
+      {
+        id: 3,
+        question: "Which chamber of the heart pumps blood to the body?",
+        options: ["Right Atrium", "Left Atrium", "Right Ventricle", "Left Ventricle"],
+        correct: 3,
+        explanation: "The left ventricle is the heart's main pumping chamber that sends oxygenated blood to the body."
+      },
+      {
+        id: 4,
+        question: "What is the longest bone in the human body?",
+        options: ["Tibia", "Fibula", "Femur", "Humerus"],
+        correct: 2,
+        explanation: "The femur (thigh bone) is the longest and strongest bone in the human body."
+      },
+      {
+        id: 5,
+        question: "How many chambers does the human heart have?",
+        options: ["2", "3", "4", "5"],
+        correct: 2,
+        explanation: "The human heart has four chambers: two atria (upper chambers) and two ventricles (lower chambers)."
+      }
+    ]
+  },
+  "genetics": {
+    title: "Genetics Quiz",
+    description: "Test your knowledge of heredity and genes",
+    questions: [
+      {
+        id: 1,
+        question: "What does DNA stand for?",
+        options: ["Deoxyribonucleic Acid", "Diribonucleic Acid", "Deoxyribose Acid", "Dehydrated Nucleic Acid"],
+        correct: 0,
+        explanation: "DNA stands for Deoxyribonucleic Acid, the molecule that carries genetic information."
+      },
+      {
+        id: 2,
+        question: "How many chromosomes do humans normally have?",
+        options: ["44", "46", "48", "50"],
+        correct: 1,
+        explanation: "Humans typically have 46 chromosomes (23 pairs) in each cell nucleus."
+      },
+      {
+        id: 3,
+        question: "What are the four bases found in DNA?",
+        options: ["A, T, G, C", "A, U, G, C", "A, T, G, U", "T, G, C, U"],
+        correct: 0,
+        explanation: "The four DNA bases are Adenine (A), Thymine (T), Guanine (G), and Cytosine (C)."
+      },
+      {
+        id: 4,
+        question: "What is a gene?",
+        options: ["A type of cell", "A chromosome", "A segment of DNA that codes for a trait", "A protein"],
+        correct: 2,
+        explanation: "A gene is a specific sequence of DNA that contains instructions for making a particular protein or trait."
+      },
+      {
+        id: 5,
+        question: "What is the process of making RNA from DNA called?",
+        options: ["Translation", "Transcription", "Replication", "Mutation"],
+        correct: 1,
+        explanation: "Transcription is the process where genetic information in DNA is copied to make RNA."
+      }
+    ]
+  },
+  "ecology": {
+    title: "Ecology Quiz",
+    description: "Test your knowledge of ecosystems and environment",
+    questions: [
+      {
+        id: 1,
+        question: "What is an ecosystem?",
+        options: ["Only living organisms", "Only non-living factors", "Living organisms and their environment", "Just plants and animals"],
+        correct: 2,
+        explanation: "An ecosystem includes all living organisms and the non-living environment they interact with."
+      },
+      {
+        id: 2,
+        question: "What are organisms that make their own food called?",
+        options: ["Consumers", "Decomposers", "Producers", "Parasites"],
+        correct: 2,
+        explanation: "Producers (like plants) make their own food through photosynthesis and form the base of food chains."
+      },
+      {
+        id: 3,
+        question: "What is the role of decomposers in an ecosystem?",
+        options: ["Eat other animals", "Make food from sunlight", "Break down dead organisms", "Pollinate flowers"],
+        correct: 2,
+        explanation: "Decomposers break down dead plants and animals, recycling nutrients back into the ecosystem."
+      },
+      {
+        id: 4,
+        question: "What is biodiversity?",
+        options: ["Number of plants only", "Variety of life in an ecosystem", "Amount of water", "Soil quality"],
+        correct: 1,
+        explanation: "Biodiversity refers to the variety of different species and genetic diversity within an ecosystem."
+      },
+      {
+        id: 5,
+        question: "What is a food web?",
+        options: ["A spider's web", "Interconnected food chains", "Plant roots", "Animal homes"],
+        correct: 1,
+        explanation: "A food web shows how multiple food chains are interconnected in an ecosystem."
+      }
+    ]
+  },
+  "marine-biology": {
+    title: "Marine Biology Quiz",
+    description: "Test your knowledge of ocean life",
+    questions: [
+      {
+        id: 1,
+        question: "What percentage of Earth's surface is covered by oceans?",
+        options: ["60%", "65%", "71%", "75%"],
+        correct: 2,
+        explanation: "Approximately 71% of Earth's surface is covered by oceans, making them the largest habitat on our planet."
+      },
+      {
+        id: 2,
+        question: "What are coral reefs primarily made of?",
+        options: ["Rocks", "Plants", "Coral polyp skeletons", "Sand"],
+        correct: 2,
+        explanation: "Coral reefs are built from the calcium carbonate skeletons of coral polyps accumulated over thousands of years."
+      },
+      {
+        id: 3,
+        question: "Which zone of the ocean receives no sunlight?",
+        options: ["Sunlight zone", "Twilight zone", "Midnight zone", "Abyssal zone"],
+        correct: 2,
+        explanation: "The midnight zone (bathypelagic zone) is completely dark as no sunlight penetrates to these depths."
+      },
+      {
+        id: 4,
+        question: "What is the largest animal on Earth?",
+        options: ["Great White Shark", "Blue Whale", "Giant Squid", "Orca"],
+        correct: 1,
+        explanation: "The blue whale is the largest animal ever known to have lived on Earth, reaching lengths up to 100 feet."
+      },
+      {
+        id: 5,
+        question: "What process do deep-sea organisms use to make food without sunlight?",
+        options: ["Photosynthesis", "Chemosynthesis", "Fermentation", "Respiration"],
+        correct: 1,
+        explanation: "Chemosynthesis allows organisms to produce food using chemical energy from sources like hydrothermal vents."
       }
     ]
   }

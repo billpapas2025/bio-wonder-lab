@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Search, Microscope, Leaf, Heart, Dna } from "lucide-react";
+import { Search, Microscope, Leaf, Heart, Dna, TreePine, Waves } from "lucide-react";
 import Header from "@/components/Header";
 import TopicCard from "@/components/TopicCard";
 import SearchBar from "@/components/SearchBar";
@@ -15,7 +15,7 @@ const topics = [
     icon: Microscope,
     image: "photo-1466721591366-2d5fba72006d",
     difficulty: "Beginner",
-    lessons: 12,
+    lessons: 6,
     duration: "4 hours"
   },
   {
@@ -25,7 +25,7 @@ const topics = [
     icon: Leaf,
     image: "photo-1485833077593-4278bba3f11f",
     difficulty: "Intermediate",
-    lessons: 15,
+    lessons: 8,
     duration: "6 hours"
   },
   {
@@ -35,7 +35,7 @@ const topics = [
     icon: Heart,
     image: "photo-1535268647677-300dbf3d78d1",
     difficulty: "Advanced",
-    lessons: 20,
+    lessons: 10,
     duration: "8 hours"
   },
   {
@@ -45,27 +45,27 @@ const topics = [
     icon: Dna,
     image: "photo-1498936178812-4b2e558d2937",
     difficulty: "Advanced",
-    lessons: 18,
+    lessons: 9,
     duration: "7 hours"
   },
   {
     id: "ecology",
     title: "Ecology",
     description: "Study the relationships between organisms and their environment",
-    icon: Leaf,
+    icon: TreePine,
     image: "photo-1452378174528-3090a4bba7b2",
     difficulty: "Intermediate",
-    lessons: 14,
+    lessons: 7,
     duration: "5 hours"
   },
   {
     id: "marine-biology",
     title: "Marine Biology",
     description: "Dive into the study of ocean life and aquatic ecosystems",
-    icon: Heart,
+    icon: Waves,
     image: "photo-1518877593221-1f28583780b4",
     difficulty: "Intermediate",
-    lessons: 16,
+    lessons: 8,
     duration: "6 hours"
   }
 ];
