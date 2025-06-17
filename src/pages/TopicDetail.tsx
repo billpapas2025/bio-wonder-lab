@@ -197,6 +197,10 @@ const TopicDetail = () => {
   const completedLessons = topic.lessons.filter(lesson => lesson.completed).length;
   const remainingLessons = topic.lessons.length - completedLessons;
 
+  const handleLessonStart = (lessonId: number) => {
+    navigate(`/lesson/${topicId}/${lessonId}`);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-bio-green-light/20 via-white to-bio-blue-light/20">
       <Header />
@@ -263,7 +267,7 @@ const TopicDetail = () => {
                   {topic.lessons.map((lesson) => (
                     <div 
                       key={lesson.id}
-                      className="flex items-center justify-between p-4 rounded-lg border hover:bg-gray-50 transition-colors cursor-pointer"
+                      className="flex items-center justify-between p-4 rounded-lg border hover:bg-gray-50 transition-colors"
                     >
                       <div className="flex items-center space-x-3">
                         <div className={`p-2 rounded-lg ${lesson.completed ? 'bg-bio-green text-white' : 'bg-gray-100 text-gray-500'}`}>
@@ -277,7 +281,12 @@ const TopicDetail = () => {
                           </div>
                         </div>
                       </div>
-                      <Button variant="ghost" size="sm">
+                      <Button 
+                        variant="ghost" 
+                        size="sm"
+                        onClick={() => handleLessonStart(lesson.id)}
+                        className="hover:bg-bio-green hover:text-white"
+                      >
                         {lesson.completed ? "Review" : "Start"}
                       </Button>
                     </div>
