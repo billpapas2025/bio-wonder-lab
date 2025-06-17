@@ -4,13 +4,13 @@ import { Users, BookOpen, Award, Clock } from "lucide-react";
 const stats = [
   {
     icon: Users,
-    number: "10,000+",
+    number: "6",
     label: "Active Learners",
     color: "text-bio-green"
   },
   {
     icon: BookOpen,
-    number: "500+",
+    number: "60+",
     label: "Lessons Available",
     color: "text-bio-blue"
   },
