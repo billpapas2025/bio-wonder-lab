@@ -1,8 +1,14 @@
-
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const scrollToTopics = () => {
+    const topicsSection = document.getElementById('explore-topics');
+    if (topicsSection) {
+      topicsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative py-20 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-bio-green/10 to-bio-blue/10"></div>
@@ -25,6 +31,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
+            onClick={scrollToTopics}
             className="bg-gradient-to-r from-bio-green to-bio-blue hover:from-bio-green-dark hover:to-bio-blue-dark text-white px-8 py-4 text-lg group"
           >
             Start Learning

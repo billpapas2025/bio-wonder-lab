@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Search, Microscope, Leaf, Heart, Dna, TreePine, Waves } from "lucide-react";
 import Header from "@/components/Header";
@@ -90,7 +89,7 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         <StatsSection />
         
-        <div className="mb-8">
+        <div id="explore-topics" className="mb-8">
           <h2 className="text-3xl font-bold text-bio-forest mb-6 text-center">
             Explore Biology Topics
           </h2>
