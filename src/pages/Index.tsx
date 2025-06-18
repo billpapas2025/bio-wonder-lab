@@ -5,6 +5,7 @@ import TopicCard from "@/components/TopicCard";
 import SearchBar from "@/components/SearchBar";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
+import Footer from "@/components/Footer";
 
 const topics = [
   {
@@ -118,6 +119,8 @@ const Index = () => {
           </div>
         )}
       </div>
+      
+      <Footer />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Microscope, Menu, X, BookOpen, BarChart3 } from "lucide-react";
+import { Microscope, Menu, X, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -22,13 +22,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link 
-              to="/" 
-              className="flex items-center space-x-1 text-bio-forest hover:text-bio-green transition-colors duration-200"
-            >
-              <BookOpen className="w-4 h-4" />
-              <span>Topics</span>
-            </Link>
             <Link 
               to="/progress" 
               className="flex items-center space-x-1 text-bio-forest hover:text-bio-green transition-colors duration-200"
@@ -54,14 +47,6 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <Link 
-                to="/" 
-                className="flex items-center space-x-2 text-bio-forest hover:text-bio-green transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <BookOpen className="w-4 h-4" />
-                <span>Topics</span>
-              </Link>
               <Link 
                 to="/progress" 
                 className="flex items-center space-x-2 text-bio-forest hover:text-bio-green transition-colors"
