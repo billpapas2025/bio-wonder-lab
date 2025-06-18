@@ -11,8 +11,8 @@ const Header = () => {
     <header className="bg-white/90 backdrop-blur-md shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-to-br from-bio-green to-bio-blue rounded-xl group-hover:scale-110 transition-transform duration-300">
+          <Link to="/" className="flex items-center space-x-2 group cursor-pointer">
+            <div className="p-2 bg-gradient-to-br from-bio-green to-bio-blue rounded-xl group-hover:scale-110 transition-transform duration-300 pointer-events-none">
               <Microscope className="w-8 h-8 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-bio-green to-bio-blue bg-clip-text text-transparent">
