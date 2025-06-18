@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Search, Microscope, Leaf, Heart, Dna, TreePine, Waves } from "lucide-react";
 import Header from "@/components/Header";
@@ -13,7 +14,7 @@ const topics = [
     title: "Cell Biology",
     description: "Explore the fundamental units of life and their structures",
     icon: Microscope,
-    image: "photo-1466721591366-2d5fba72006d",
+    image: "/lovable-uploads/aa72f012-b0ef-4432-8ed3-e8f99377d008.png",
     difficulty: "Beginner",
     lessons: 6,
     duration: "4 hours"
@@ -23,7 +24,7 @@ const topics = [
     title: "Botany",
     description: "Discover the fascinating world of plants and their ecosystems",
     icon: Leaf,
-    image: "photo-1485833077593-4278bba3f11f",
+    image: "/lovable-uploads/74a8bdc2-d1a8-4933-b316-1da0469caf19.png",
     difficulty: "Intermediate",
     lessons: 8,
     duration: "6 hours"
@@ -33,7 +34,7 @@ const topics = [
     title: "Human Anatomy",
     description: "Learn about the complex systems of the human body",
     icon: Heart,
-    image: "photo-1535268647677-300dbf3d78d1",
+    image: "/lovable-uploads/ab9072f8-8982-44a4-824a-90fbb94bcaea.png",
     difficulty: "Advanced",
     lessons: 10,
     duration: "8 hours"
@@ -43,7 +44,7 @@ const topics = [
     title: "Genetics",
     description: "Understand heredity and the molecular basis of inheritance",
     icon: Dna,
-    image: "photo-1498936178812-4b2e558d2937",
+    image: "/lovable-uploads/ff6a3b2f-d3ea-4371-a59b-e3465bd6edf3.png",
     difficulty: "Advanced",
     lessons: 9,
     duration: "7 hours"
@@ -53,7 +54,7 @@ const topics = [
     title: "Ecology",
     description: "Study the relationships between organisms and their environment",
     icon: TreePine,
-    image: "photo-1452378174528-3090a4bba7b2",
+    image: "/lovable-uploads/7bbf19ca-7ef7-45c6-bfcb-d30560162a5d.png",
     difficulty: "Intermediate",
     lessons: 7,
     duration: "5 hours"
@@ -63,7 +64,7 @@ const topics = [
     title: "Marine Biology",
     description: "Dive into the study of ocean life and aquatic ecosystems",
     icon: Waves,
-    image: "photo-1518877593221-1f28583780b4",
+    image: "/lovable-uploads/b6581ef4-4c6a-43c4-92f9-ef6197c7bda6.png",
     difficulty: "Intermediate",
     lessons: 8,
     duration: "6 hours"

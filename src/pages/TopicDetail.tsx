@@ -11,7 +11,7 @@ const topicData = {
   "cell-biology": {
     title: "Cell Biology",
     description: "Explore the fundamental units of life and their structures",
-    image: "photo-1466721591366-2d5fba72006d",
+    image: "/lovable-uploads/aa72f012-b0ef-4432-8ed3-e8f99377d008.png",
     difficulty: "Beginner",
     duration: "4 hours",
     progress: 0,
@@ -36,7 +36,7 @@ const topicData = {
   "botany": {
     title: "Botany",
     description: "Discover the fascinating world of plants and their ecosystems",
-    image: "photo-1485833077593-4278bba3f11f",
+    image: "/lovable-uploads/74a8bdc2-d1a8-4933-b316-1da0469caf19.png",
     difficulty: "Intermediate",
     duration: "6 hours",
     progress: 0,
@@ -65,7 +65,7 @@ const topicData = {
   "anatomy": {
     title: "Human Anatomy",
     description: "Learn about the complex systems of the human body",
-    image: "photo-1535268647677-300dbf3d78d1",
+    image: "/lovable-uploads/ab9072f8-8982-44a4-824a-90fbb94bcaea.png",
     difficulty: "Advanced",
     duration: "8 hours",
     progress: 0,
@@ -98,7 +98,7 @@ const topicData = {
   "genetics": {
     title: "Genetics",
     description: "Understand heredity and the molecular basis of inheritance",
-    image: "photo-1498936178812-4b2e558d2937",
+    image: "/lovable-uploads/ff6a3b2f-d3ea-4371-a59b-e3465bd6edf3.png",
     difficulty: "Advanced",
     duration: "7 hours",
     progress: 0,
@@ -129,7 +129,7 @@ const topicData = {
   "ecology": {
     title: "Ecology",
     description: "Study the relationships between organisms and their environment",
-    image: "photo-1452378174528-3090a4bba7b2",
+    image: "/lovable-uploads/7bbf19ca-7ef7-45c6-bfcb-d30560162a5d.png",
     difficulty: "Intermediate",
     duration: "5 hours",
     progress: 0,
@@ -156,7 +156,7 @@ const topicData = {
   "marine-biology": {
     title: "Marine Biology",
     description: "Dive into the study of ocean life and aquatic ecosystems",
-    image: "photo-1518877593221-1f28583780b4",
+    image: "/lovable-uploads/b6581ef4-4c6a-43c4-92f9-ef6197c7bda6.png",
     difficulty: "Intermediate",
     duration: "6 hours",
     progress: 0,
@@ -201,6 +201,11 @@ const TopicDetail = () => {
     navigate(`/lesson/${topicId}/${lessonId}`);
   };
 
+  // Check if the image is an uploaded file or Unsplash URL
+  const imageUrl = topic.image.startsWith('/lovable-uploads/') 
+    ? topic.image 
+    : `https://images.unsplash.com/${topic.image}?w=800&h=400&fit=crop`;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-bio-green-light/20 via-white to-bio-blue-light/20">
       <Header />
@@ -223,7 +228,7 @@ const TopicDetail = () => {
               <div 
                 className="h-64 bg-cover bg-center relative"
                 style={{
-                  backgroundImage: `url(https://images.unsplash.com/${topic.image}?w=800&h=400&fit=crop)`
+                  backgroundImage: `url(${imageUrl})`
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>

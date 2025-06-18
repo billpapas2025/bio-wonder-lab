@@ -37,13 +37,18 @@ const TopicCard = ({ topic }: TopicCardProps) => {
   const navigate = useNavigate();
   const IconComponent = topic.icon;
 
+  // Check if the image is an uploaded file or Unsplash URL
+  const imageUrl = topic.image.startsWith('/lovable-uploads/') 
+    ? topic.image 
+    : `https://images.unsplash.com/${topic.image}?w=400&h=300&fit=crop`;
+
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-sm border-0 shadow-lg overflow-hidden">
       <div className="relative">
         <div 
           className="h-48 bg-cover bg-center relative"
           style={{
-            backgroundImage: `url(https://images.unsplash.com/${topic.image}?w=400&h=300&fit=crop)`
+            backgroundImage: `url(${imageUrl})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
