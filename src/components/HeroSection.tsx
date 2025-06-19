@@ -1,3 +1,4 @@
+
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,6 +8,10 @@ const HeroSection = () => {
     if (topicsSection) {
       topicsSection.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openDemo = () => {
+    window.open('https://www.youtube.com/watch?v=LkKR6u2DSoU', '_blank');
   };
 
   return (
@@ -41,6 +46,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg" 
+            onClick={openDemo}
             className="border-bio-green text-bio-green hover:bg-bio-green hover:text-white px-8 py-4 text-lg group"
           >
             <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
